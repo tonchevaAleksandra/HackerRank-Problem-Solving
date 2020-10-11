@@ -87,8 +87,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndTheBeast", "Sher
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudyDay", "CloudyDay\CloudyDay.csproj", "{1698990F-8207-413D-9BEC-87AD37C53B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveDigitSum", "RecursiveDigitSum\RecursiveDigitSum.csproj", "{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -263,10 +261,6 @@ Global
 		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
