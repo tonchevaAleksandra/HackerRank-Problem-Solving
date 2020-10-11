@@ -77,13 +77,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarcAndToys", "MarcAndToys\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreedyFlorist", "GreedyFlorist\GreedyFlorist.csproj", "{F3E35DFC-2C12-4F7D-B072-D3B80EAC0EF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMin", "MaxMin\MaxMin.csproj", "{79B49548-A813-4F4B-B714-FD64EFA87010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxMin", "MaxMin\MaxMin.csproj", "{79B49548-A813-4F4B-B714-FD64EFA87010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JimAndTheOrders", "JimAndTheOrders\JimAndTheOrders.csproj", "{B1EE0E6F-0F06-439D-9A62-88892C77F0F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimAndTheOrders", "JimAndTheOrders\JimAndTheOrders.csproj", "{B1EE0E6F-0F06-439D-9A62-88892C77F0F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermutingTwoArrays", "PermuttingTwoArrays\PermutingTwoArrays.csproj", "{75C944CD-A85A-4B07-8BFD-F2A821BE7CE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PermutingTwoArrays", "PermuttingTwoArrays\PermutingTwoArrays.csproj", "{75C944CD-A85A-4B07-8BFD-F2A821BE7CE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SherlockAndTheBeast", "SherlockAnTheBeast\SherlockAndTheBeast.csproj", "{DBFAB4C8-9472-4BCA-902A-CBD856A09F0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndTheBeast", "SherlockAnTheBeast\SherlockAndTheBeast.csproj", "{DBFAB4C8-9472-4BCA-902A-CBD856A09F0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudyDay", "CloudyDay\CloudyDay.csproj", "{1698990F-8207-413D-9BEC-87AD37C53B8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveDigitSum", "RecursiveDigitSum\RecursiveDigitSum.csproj", "{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +259,14 @@ Global
 		{DBFAB4C8-9472-4BCA-902A-CBD856A09F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBFAB4C8-9472-4BCA-902A-CBD856A09F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBFAB4C8-9472-4BCA-902A-CBD856A09F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1698990F-8207-413D-9BEC-87AD37C53B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D8EA76-66BE-43EA-89C8-ACD0ED9FD871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
