@@ -87,9 +87,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SherlockAndTheBeast", "Sher
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudyDay", "CloudyDay\CloudyDay.csproj", "{1698990F-8207-413D-9BEC-87AD37C53B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpingOnTheClouds", "JumpingOnTheClouds\JumpingOnTheClouds.csproj", "{E82951BE-3C83-4357-9C4D-18FA3D2F404C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JumpingOnTheClouds", "JumpingOnTheClouds\JumpingOnTheClouds.csproj", "{E82951BE-3C83-4357-9C4D-18FA3D2F404C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedString", "RepeatedString\RepeatedString.csproj", "{3A233560-6C6E-48C7-996B-827F5555FEB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatedString", "RepeatedString\RepeatedString.csproj", "{3A233560-6C6E-48C7-996B-827F5555FEB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTablesRansomNote", "HashTablesRansomNote\HashTablesRansomNote.csproj", "{4BAD60F5-E10A-47C1-ADC4-2D32877D97B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -273,6 +275,10 @@ Global
 		{3A233560-6C6E-48C7-996B-827F5555FEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A233560-6C6E-48C7-996B-827F5555FEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A233560-6C6E-48C7-996B-827F5555FEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAD60F5-E10A-47C1-ADC4-2D32877D97B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAD60F5-E10A-47C1-ADC4-2D32877D97B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAD60F5-E10A-47C1-ADC4-2D32877D97B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAD60F5-E10A-47C1-ADC4-2D32877D97B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
