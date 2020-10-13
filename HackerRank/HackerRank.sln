@@ -95,7 +95,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTablesRansomNote", "Has
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30DaysChallenge", "30DaysChallenge", "{092FE76E-CFCE-455A-8065-D1912E32524F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{6BE59551-6F03-43AA-B36B-B658CEEB312E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{6BE59551-6F03-43AA-B36B-B658CEEB312E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsMakingAnagrams", "StringsMakingAnagrams\StringsMakingAnagrams.csproj", "{DF98DC5E-4686-4190-9EF7-0B427D6F0AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlternatingCharacters", "AlternatingCharacters\AlternatingCharacters.csproj", "{7A30669B-619D-4C71-A0E0-46EFB1DFF029}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,6 +291,14 @@ Global
 		{6BE59551-6F03-43AA-B36B-B658CEEB312E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BE59551-6F03-43AA-B36B-B658CEEB312E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BE59551-6F03-43AA-B36B-B658CEEB312E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF98DC5E-4686-4190-9EF7-0B427D6F0AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF98DC5E-4686-4190-9EF7-0B427D6F0AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF98DC5E-4686-4190-9EF7-0B427D6F0AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF98DC5E-4686-4190-9EF7-0B427D6F0AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A30669B-619D-4C71-A0E0-46EFB1DFF029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A30669B-619D-4C71-A0E0-46EFB1DFF029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A30669B-619D-4C71-A0E0-46EFB1DFF029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A30669B-619D-4C71-A0E0-46EFB1DFF029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
