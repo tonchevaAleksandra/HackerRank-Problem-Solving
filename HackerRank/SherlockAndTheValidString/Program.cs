@@ -17,24 +17,21 @@ namespace SherlockAndTheValidString
                 else countingChars[item]++;
             }
 
-            var list = countingChars.Values.ToList().OrderBy(a=>a);
+            var list = countingChars.Values.OrderBy(a=>a).ToList();
             long max = list.Max();
             long min = list.Min();
-            if (max == min )
-                return "YES";
+            var minValues = list.Where(x => x==min).ToList().Count();
+            var maxValues = list.Where(x => x == max).ToList().Count();
+            var restElements = list.Where(x => x != max && x != min).ToList().Count();
            
-            var countMinValues = countingChars.Where(c => c.Value == min).Count();
-            var countMaxValues = countingChars.Where(c => c.Value == max).Count();
-            var currentDict = countingChars.Where(c => c.Value != max && c.Value != min);
-            if(countMaxValues==1 && list.Count()-countMinValues==1 )
+            if (min == max  )
                 return "YES";
-            if(countMinValues == 1 && list.Count()-countMaxValues==1 ) return "YES";
-            //if (max - min >= 1 && (countMinValues == 1 || countMaxValues == 1) && currentDict.Count()==0)
-            //{
-            //    return "YES";
-            //}
-          
-
+                
+            if(max-min ==1 && restElements==0 && maxValues==1)
+                 return "YES";
+            if (max - min >= 1 && minValues == 1 && list[0] == 1 && restElements == 0)
+                return "YES";
+       
             return "NO";
         }
         static void Main(string[] args)
