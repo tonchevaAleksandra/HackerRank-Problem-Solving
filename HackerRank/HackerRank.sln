@@ -109,15 +109,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Balancedbrackets", "Balance
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueriesAtaleOfTwoStacks", "QueriesAtaleOfTwoStacks\QueriesAtaleOfTwoStacks.csproj", "{F0799DD0-865F-483A-AC38-8443B2BCDF9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{35A7C446-8D43-41E9-A8BC-C3CED60CD570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "Operators\Operators.csproj", "{35A7C446-8D43-41E9-A8BC-C3CED60CD570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingNumbers", "PickingNumbers\PickingNumbers.csproj", "{6CB4D2AB-1E16-4804-9C9C-C43C97D61BD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PickingNumbers", "PickingNumbers\PickingNumbers.csproj", "{6CB4D2AB-1E16-4804-9C9C-C43C97D61BD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignerPDFViewer", "DesignerPDFViewer\DesignerPDFViewer.csproj", "{E0EE7F49-CEF9-49F8-AE00-7D8D6817A526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignerPDFViewer", "DesignerPDFViewer\DesignerPDFViewer.csproj", "{E0EE7F49-CEF9-49F8-AE00-7D8D6817A526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtopianTree", "UtopianTree\UtopianTree.csproj", "{C7D3EC52-BB36-4465-AC88-B0FB6221F701}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtopianTree", "UtopianTree\UtopianTree.csproj", "{C7D3EC52-BB36-4465-AC88-B0FB6221F701}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViralAdvertising", "ViralAdvertising\ViralAdvertising.csproj", "{04AD1866-DF2E-4937-B2FE-1C518DEF8A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViralAdvertising", "ViralAdvertising\ViralAdvertising.csproj", "{04AD1866-DF2E-4937-B2FE-1C518DEF8A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToConditionalStatements", "IntroToConditionalStatements\IntroToConditionalStatements.csproj", "{E41DC775-AA32-48F7-96C3-030FCC55EABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -353,6 +355,10 @@ Global
 		{04AD1866-DF2E-4937-B2FE-1C518DEF8A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04AD1866-DF2E-4937-B2FE-1C518DEF8A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04AD1866-DF2E-4937-B2FE-1C518DEF8A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41DC775-AA32-48F7-96C3-030FCC55EABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41DC775-AA32-48F7-96C3-030FCC55EABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41DC775-AA32-48F7-96C3-030FCC55EABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41DC775-AA32-48F7-96C3-030FCC55EABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -361,6 +367,7 @@ Global
 		{6BE59551-6F03-43AA-B36B-B658CEEB312E} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{E52E2191-A82C-41F1-BC96-B022DE198DAD} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{35A7C446-8D43-41E9-A8BC-C3CED60CD570} = {092FE76E-CFCE-455A-8065-D1912E32524F}
+		{E41DC775-AA32-48F7-96C3-030FCC55EABC} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A213EF2-8064-4A7C-8D3F-B2170910E38D}
