@@ -133,7 +133,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionariesAndMaps", "DictionariesAndMaps\DictionariesAndMaps.csproj", "{68AA1D9A-03D7-46A4-A51F-617583F5FE16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion3", "Recursion3\Recursion3.csproj", "{71A48C5D-7D05-40E2-8629-ECC8D0D95660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion3", "Recursion3\Recursion3.csproj", "{71A48C5D-7D05-40E2-8629-ECC8D0D95660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryNumbers", "BinaryNumbers\BinaryNumbers.csproj", "{52074676-FD1A-4C80-B143-EDA7D1DF5ADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -401,6 +403,10 @@ Global
 		{71A48C5D-7D05-40E2-8629-ECC8D0D95660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A48C5D-7D05-40E2-8629-ECC8D0D95660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A48C5D-7D05-40E2-8629-ECC8D0D95660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52074676-FD1A-4C80-B143-EDA7D1DF5ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52074676-FD1A-4C80-B143-EDA7D1DF5ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52074676-FD1A-4C80-B143-EDA7D1DF5ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52074676-FD1A-4C80-B143-EDA7D1DF5ADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -416,6 +422,7 @@ Global
 		{F72FF210-ADFB-4E47-99BD-DB23DEF96E10} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{68AA1D9A-03D7-46A4-A51F-617583F5FE16} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{71A48C5D-7D05-40E2-8629-ECC8D0D95660} = {092FE76E-CFCE-455A-8065-D1912E32524F}
+		{52074676-FD1A-4C80-B143-EDA7D1DF5ADD} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A213EF2-8064-4A7C-8D3F-B2170910E38D}
