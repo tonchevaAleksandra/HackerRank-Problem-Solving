@@ -147,6 +147,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 14. Scope", "Day 14. Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 15. Linked List", "Day 15. Linked List\Day 15. Linked List.csproj", "{2E6FB73B-0FAC-46A2-B66C-A4093D78BD55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 16. Exceptions - String to Integer", "Day 16. Exceptions - String to Integer\Day 16. Exceptions - String to Integer.csproj", "{C510DA15-6121-4E9D-8167-D2CBF6C84FB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -437,6 +439,10 @@ Global
 		{2E6FB73B-0FAC-46A2-B66C-A4093D78BD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E6FB73B-0FAC-46A2-B66C-A4093D78BD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E6FB73B-0FAC-46A2-B66C-A4093D78BD55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C510DA15-6121-4E9D-8167-D2CBF6C84FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C510DA15-6121-4E9D-8167-D2CBF6C84FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C510DA15-6121-4E9D-8167-D2CBF6C84FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C510DA15-6121-4E9D-8167-D2CBF6C84FB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -458,6 +464,7 @@ Global
 		{C474E934-5687-448B-92D1-F5A889382D2F} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{912BF815-FBD4-4439-B93D-56E42686ABE2} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 		{2E6FB73B-0FAC-46A2-B66C-A4093D78BD55} = {092FE76E-CFCE-455A-8065-D1912E32524F}
+		{C510DA15-6121-4E9D-8167-D2CBF6C84FB0} = {092FE76E-CFCE-455A-8065-D1912E32524F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A213EF2-8064-4A7C-8D3F-B2170910E38D}
