@@ -2,7 +2,7 @@
 
 namespace Day_12._Inheritance
 {
-  public  class Solution
+    public class Solution
     {
         static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace Day_12._Inheritance
             Console.WriteLine("Grade: " + s.Calculate() + "\n");
         }
     }
-   class Person
+    public abstract class Person
     {
         protected string firstName;
         protected string lastName;
@@ -42,26 +42,21 @@ namespace Day_12._Inheritance
         }
     }
 
-  class Student:Person
+    public class Student : Person
     {
         private int[] testScores;
-        private string firstName;
-        private string lastName;
-        private int id;
 
-        public Student(string firstName,string lastName,int id,int[] scores)
-            :base(firstName, lastName, id)
+
+        public Student(string firstName, string lastName, int id, int[] scores)
+            : base(firstName, lastName, id)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.Id = id;
             this.testScores = scores;
         }
 
 
         public char Calculate()
         {
-            
+
             var s = 0;
 
             for (int i = 0; i < this.testScores.Length; i++)
@@ -86,5 +81,5 @@ namespace Day_12._Inheritance
 
         }
     }
-    
+
 }
