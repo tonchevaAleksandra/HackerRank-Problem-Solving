@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareTheTriplets", "CompareTheTriplets\CompareTheTriplets.csproj", "{28E9DDC8-F449-43E7-9BAA-6519212D3C5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompareTheTriplets", "CompareTheTriplets\CompareTheTriplets.csproj", "{28E9DDC8-F449-43E7-9BAA-6519212D3C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVeryBigSum1", "AVeryBigSum\AVeryBigSum1.csproj", "{52217941-F58D-4F61-AB07-966A264DA5A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AVeryBigSum1", "AVeryBigSum\AVeryBigSum1.csproj", "{52217941-F58D-4F61-AB07-966A264DA5A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalSumDifference", "DiagonalSumDifference\DiagonalSumDifference.csproj", "{0E372838-EA7C-4D5E-A603-2F9036C31DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiagonalSumDifference", "DiagonalSumDifference\DiagonalSumDifference.csproj", "{0E372838-EA7C-4D5E-A603-2F9036C31DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheHurdleRace", "TheHurdleRace\TheHurdleRace.csproj", "{A4358A75-AC6B-4720-AA78-CB42AFAAE177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0E372838-EA7C-4D5E-A603-2F9036C31DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E372838-EA7C-4D5E-A603-2F9036C31DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E372838-EA7C-4D5E-A603-2F9036C31DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4358A75-AC6B-4720-AA78-CB42AFAAE177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4358A75-AC6B-4720-AA78-CB42AFAAE177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4358A75-AC6B-4720-AA78-CB42AFAAE177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4358A75-AC6B-4720-AA78-CB42AFAAE177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
