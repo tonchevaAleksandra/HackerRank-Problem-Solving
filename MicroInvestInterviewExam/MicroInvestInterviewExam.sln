@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulator", "MicroInvestInterviewExam\DuckSimulator.csproj", "{35B30466-2462-49B9-9BDF-6F0F7E8EB888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondProblem", "SecondProblem\SecondProblem.csproj", "{F61F1976-0270-4C0D-95CF-331D8802B32F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35B30466-2462-49B9-9BDF-6F0F7E8EB888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B30466-2462-49B9-9BDF-6F0F7E8EB888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B30466-2462-49B9-9BDF-6F0F7E8EB888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B30466-2462-49B9-9BDF-6F0F7E8EB888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61F1976-0270-4C0D-95CF-331D8802B32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61F1976-0270-4C0D-95CF-331D8802B32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61F1976-0270-4C0D-95CF-331D8802B32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61F1976-0270-4C0D-95CF-331D8802B32F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34DB35F1-1049-47EA-AC8F-E3C148CAAAAB}
+	EndGlobalSection
+EndGlobal
