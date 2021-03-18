@@ -13,10 +13,10 @@ namespace SecondProblem
             Console.WriteLine("And I will tell you the indices of the first two numbers that meet the condition!");
 
             string input = Console.ReadLine();
-            List<int> arr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries)
+            int[] arr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .OrderBy(x => x)
-                .ToList();
+                .ToArray();
             int searchedSum = int.Parse(Console.ReadLine());
 
             bool isFound = false;
@@ -24,7 +24,7 @@ namespace SecondProblem
             int[] result = new int[2];
             Dictionary<int, int> dict = new Dictionary<int, int>();
             int i = 0;
-            while (i < arr.Count && arr[i] < searchedSum)
+            while (i < arr.Length && arr[i] < searchedSum)
             {
                 if (dict.ContainsKey(searchedSum - arr[i]))
                 {
@@ -38,14 +38,9 @@ namespace SecondProblem
                 i++;
             }
 
-            if (!isFound)
-            {
-                Console.WriteLine("There are no numbers that match the condition!");
-            }
-            else
-            {
-                Console.WriteLine($"The positions of the first two numbers that match the condition are  {result[0]} and {result[1]}");
-            }
+            Console.WriteLine(!isFound
+                ? "There are no numbers that match the condition!"
+                : $"The positions of the first two numbers that match the condition are  {result[0]} and {result[1]}");
         }
     }
 }
