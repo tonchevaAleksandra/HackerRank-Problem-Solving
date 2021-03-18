@@ -12,8 +12,7 @@ namespace SecondProblem
             Console.WriteLine("Hello, give me an array of numbers and on a new line a number which represents a sum of two other numbers in the array!");
             Console.WriteLine("And I will tell you the indices of the first two numbers that meet the condition!");
 
-            string input = Console.ReadLine();
-            int[] arr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries)
+            int[] arr = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
             int searchedSum = int.Parse(Console.ReadLine());
