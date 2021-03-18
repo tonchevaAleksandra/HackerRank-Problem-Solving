@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualBasic;
 
 namespace SecondProblem
 {
@@ -24,10 +23,7 @@ namespace SecondProblem
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] > searchedSum)
-                {
-                    continue;
-                }
+               
                 if (dict.ContainsKey(searchedSum - arr[i]))
                 {
                     result[0] = dict[searchedSum - arr[i]];
