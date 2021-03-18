@@ -24,7 +24,7 @@ namespace SecondProblem
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] >= searchedSum)
+                if (arr[i] > searchedSum)
                 {
                     continue;
                 }
