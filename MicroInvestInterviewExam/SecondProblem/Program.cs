@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.VisualBasic;
 
 namespace SecondProblem
 {
@@ -14,40 +15,36 @@ namespace SecondProblem
             string input = Console.ReadLine();
             List<int> arr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
+                .OrderBy(x => x)
                 .ToList();
             int searchedSum = int.Parse(Console.ReadLine());
 
-            int firstIndex = int.MinValue;
-            int secondIndex = int.MinValue;
             bool isFound = false;
 
-            for (int i = 0; i < arr.Count-1; i++)
+            int[] result = new int[2];
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+            int i = 0;
+            while (i < arr.Count && arr[i] < searchedSum)
             {
-                for (int j = i+1; j < arr.Count; j++)
+                if (dict.ContainsKey(searchedSum - arr[i]))
                 {
-                    if (arr[i] + arr[j] == searchedSum)
-                    {
-                        isFound = true;
-                        firstIndex = i;
-                        secondIndex = j;
-                        break;
-                    }
-
-                }
-
-                if (isFound)
-                {
+                    result[0] = dict[searchedSum - arr[i]];
+                    result[1] = i;
+                    isFound = true;
                     break;
                 }
+
+                dict.Add(arr[i], i);
             }
+
 
             if (!isFound)
             {
-               Console.WriteLine("There are no numbers that match the condition!"); 
+                Console.WriteLine("There are no numbers that match the condition!");
             }
             else
             {
-                Console.WriteLine($"The positions of the first two numbers that match the condition are  {firstIndex} and {secondIndex}");
+                Console.WriteLine($"The positions of the first two numbers that match the condition are  {result[0]} and {result[1]}");
             }
 
         }
