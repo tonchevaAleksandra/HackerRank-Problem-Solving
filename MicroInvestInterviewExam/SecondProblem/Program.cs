@@ -9,7 +9,7 @@ namespace SecondProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, give me an array of numbers and on a new line a number with represent a sum of two other numbers in the array!");
+            Console.WriteLine("Hello, give me an array of numbers and on a new line a number which represents a sum of two other numbers in the array!");
             Console.WriteLine("And I will tell you the indices of the first two numbers that meet the condition!");
 
             string input = Console.ReadLine();
@@ -35,8 +35,8 @@ namespace SecondProblem
                 }
 
                 dict.Add(arr[i], i);
+                i++;
             }
-
 
             if (!isFound)
             {
@@ -46,7 +46,6 @@ namespace SecondProblem
             {
                 Console.WriteLine($"The positions of the first two numbers that match the condition are  {result[0]} and {result[1]}");
             }
-
         }
     }
 }
