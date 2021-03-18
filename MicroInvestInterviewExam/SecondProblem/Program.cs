@@ -15,7 +15,7 @@ namespace SecondProblem
             string input = Console.ReadLine();
             int[] arr = input.Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
-                .OrderBy(x => x)
+                //.OrderBy(x => x)
                 .ToArray();
             int searchedSum = int.Parse(Console.ReadLine());
 
@@ -24,8 +24,12 @@ namespace SecondProblem
             int[] result = new int[2];
             Dictionary<int, int> dict = new Dictionary<int, int>();
             int i = 0;
-            while (i < arr.Length && arr[i] < searchedSum)
+            while (i < arr.Length )
             {
+                if (arr[i]>=searchedSum)
+                {
+                    continue;
+                }
                 if (dict.ContainsKey(searchedSum - arr[i]))
                 {
                     result[0] = dict[searchedSum - arr[i]];
