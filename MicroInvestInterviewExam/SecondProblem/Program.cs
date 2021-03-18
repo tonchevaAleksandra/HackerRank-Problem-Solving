@@ -22,12 +22,11 @@ namespace SecondProblem
 
             int[] result = new int[2];
             Dictionary<int, int> dict = new Dictionary<int, int>();
-            int i = 0;
-            while (i < arr.Length)
+
+            for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] >= searchedSum)
                 {
-                    i++;
                     continue;
                 }
                 if (dict.ContainsKey(searchedSum - arr[i]))
@@ -39,7 +38,6 @@ namespace SecondProblem
                 }
 
                 dict.Add(arr[i], i);
-                i++;
             }
 
             Console.WriteLine(!isFound
