@@ -36,7 +36,10 @@ namespace SecondProblem
                     break;
                 }
 
-                dict.Add(arr[i], i);
+                if (!dict.ContainsKey(arr[i]))
+                {
+                    dict.Add(arr[i], i);
+                }
             }
 
             Console.WriteLine(!isFound
