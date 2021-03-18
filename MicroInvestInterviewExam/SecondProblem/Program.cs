@@ -41,7 +41,7 @@ namespace SecondProblem
 
             Console.WriteLine(!isFound
                 ? "There are no numbers that match the condition!"
-                : $"The positions of the first two numbers that match the condition are  {result[0]} and {result[1]}");
+                : $"The positions of the first two numbers that match the condition are {result[0]} and {result[1]}");
         }
     }
 }
