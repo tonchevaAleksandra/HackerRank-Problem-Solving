@@ -31,7 +31,7 @@ namespace SecondProblem
 
             for (int i = 0; i < arr.Length; i++)
             {
-               
+
                 if (dict.ContainsKey(searchedSum - arr[i]))
                 {
                     result[0] = dict[searchedSum - arr[i]];
@@ -49,6 +49,7 @@ namespace SecondProblem
             Console.WriteLine(!isFound
                 ? "There are no numbers that match the condition!"
                 : $"The positions of the first two numbers that match the condition are {result[0]} and {result[1]}");
+
         }
     }
 }
