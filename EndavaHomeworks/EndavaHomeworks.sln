@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork", "EndavaHomeworks
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeImplementation", "TreeImplementation\TreeImplementation.csproj", "{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkEFCore", "HomeworkEFCore\HomeworkEFCore.csproj", "{525FF7CB-BD18-4EF7-9184-3A14558717D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525FF7CB-BD18-4EF7-9184-3A14558717D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525FF7CB-BD18-4EF7-9184-3A14558717D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525FF7CB-BD18-4EF7-9184-3A14558717D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525FF7CB-BD18-4EF7-9184-3A14558717D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
