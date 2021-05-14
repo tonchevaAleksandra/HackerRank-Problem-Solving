@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork", "EndavaHomeworks\HomeWork.csproj", "{2C29FA63-1F0E-43DB-AFAD-52F6CEB8CA92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeImplementation", "TreeImplementation\TreeImplementation.csproj", "{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C29FA63-1F0E-43DB-AFAD-52F6CEB8CA92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C29FA63-1F0E-43DB-AFAD-52F6CEB8CA92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C29FA63-1F0E-43DB-AFAD-52F6CEB8CA92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C29FA63-1F0E-43DB-AFAD-52F6CEB8CA92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B90F68-CD9A-4EC0-8C9E-EB3A0C7FD0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C191B99-A1B0-4E68-A0C4-84A131E4EB19}
+	EndGlobalSection
+EndGlobal
