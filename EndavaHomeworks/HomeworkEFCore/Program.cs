@@ -54,7 +54,7 @@ namespace HomeworkEFCore
                 .Take(2);
             foreach (var order in orders)
             {
-                sb.AppendLine(order.Name);
+                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
             }
 
             return sb.ToString().Trim();
@@ -69,7 +69,7 @@ namespace HomeworkEFCore
                 .Take(2);
             foreach (var order in orders)
             {
-                sb.AppendLine(order.Name);
+                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
             }
 
             return sb.ToString().Trim();
@@ -82,7 +82,7 @@ namespace HomeworkEFCore
                 .ToList();
             foreach (var order in orders)
             {
-                sb.AppendLine(order.Name);
+                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
             }
 
             return sb.ToString().Trim();
