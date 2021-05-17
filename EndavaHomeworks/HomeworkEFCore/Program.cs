@@ -2,8 +2,8 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HomeworkEFCore.Data.Commons;
 using HomeworkEFCore.Models;
+using HomeworkEFCore.Repositories;
 
 namespace HomeworkEFCore
 {

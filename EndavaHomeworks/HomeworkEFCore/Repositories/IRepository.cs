@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HomeworkEFCore.Data.Commons
+namespace HomeworkEFCore.Repositories
 {
     public interface IRepository<T> : IDisposable where T : class
     {

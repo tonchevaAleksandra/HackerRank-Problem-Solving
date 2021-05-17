@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace HomeworkEFCore.Data.Commons
+namespace HomeworkEFCore.Repositories
 {
     public class Repository<T> : IRepository<T> where T:class
     {
