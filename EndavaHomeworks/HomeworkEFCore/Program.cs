@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using HomeworkEFCore.Data.Commons;
@@ -15,21 +14,65 @@ namespace HomeworkEFCore
 
             var dbContext = new OrdersSummaryDbContext();
             var ordersRepository = new Repository<Order>(dbContext);
-            //Console.WriteLine("Press C to seed the database!");
-            //if (Console.ReadKey().Key == ConsoleKey.C)
-            //{
-            //    await SeedDatabase(dbContext, ordersRepository);
-            //}
-            
-            Console.WriteLine("Press A to view all orders!");
-            if (Console.ReadKey().Key == ConsoleKey.A)
+            Console.WriteLine("Press C to seed the database!");
+            if (Console.ReadKey().Key == ConsoleKey.C)
             {
-                Console.WriteLine();
-                Console.WriteLine(ShowAllOrders(ordersRepository));
+                await SeedDatabase(ordersRepository);
             }
 
+            Console.WriteLine("Press N to see the next 2 orders, P to see previous two orders or A to see all orders!");
 
+            ConsoleKey key = Console.ReadKey().Key;
+            var index = 0;
+            while (key==ConsoleKey.N || key==ConsoleKey.P || key== ConsoleKey.A)
+            {
+                if (key==ConsoleKey.N)
+                {
+                    Console.WriteLine(ShowNextTwoOrders(ordersRepository, index));
+                    index += 2;
+                }
+                else if (key == ConsoleKey.P)
+                {
+                    index -= 2;
+                    Console.WriteLine(ShowPreviousTwoOrders(ordersRepository, index));
+                }
+                else
+                {
+                    Console.WriteLine(ShowAllOrders(ordersRepository));
+                }
 
+                key = Console.ReadKey().Key;
+            }
+        }
+
+        public static string ShowPreviousTwoOrders(IRepository<Order> ordersRepository, int skippedNumber)
+        {
+            StringBuilder sb = new StringBuilder();
+            var orders = ordersRepository.AllAsNoTracking()
+                .ToList()
+                .Skip(skippedNumber)
+                .Take(2);
+            foreach (var order in orders)
+            {
+                sb.AppendLine(order.Name);
+            }
+
+            return sb.ToString().Trim();
+        }
+
+        public static string ShowNextTwoOrders(IRepository<Order> ordersRepository, int skippedNumber)
+        {
+            StringBuilder sb = new StringBuilder();
+            var orders = ordersRepository.AllAsNoTracking()
+                .ToList()
+                .Skip(skippedNumber)
+                .Take(2);
+            foreach (var order in orders)
+            {
+                sb.AppendLine(order.Name);
+            }
+
+            return sb.ToString().Trim();
         }
 
         public static string ShowAllOrders(IRepository<Order> ordersRepository)
@@ -45,7 +88,7 @@ namespace HomeworkEFCore
             return sb.ToString().Trim();
         }
 
-        public static async Task SeedDatabase(OrdersSummaryDbContext dbContext, IRepository<Order> ordersRepository)
+        public static async Task SeedDatabase(IRepository<Order> ordersRepository)
         {
             try
             {
