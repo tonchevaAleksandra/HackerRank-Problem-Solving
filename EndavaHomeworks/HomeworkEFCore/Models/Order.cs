@@ -22,5 +22,10 @@ namespace HomeworkEFCore.Models
         public decimal Volume { get; set; }
 
         public DateTime CreatedDate { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Name} - Created date: {this.CreatedDate} - Customer: {this.Customer.Name}";
+        }
     }
 }

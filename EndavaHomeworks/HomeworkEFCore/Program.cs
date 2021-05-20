@@ -69,7 +69,7 @@ namespace HomeworkEFCore
                 .Take(2);
             foreach (var order in orders)
             {
-                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
+                sb.AppendLine();
             }
 
             return sb.ToString().Trim();
