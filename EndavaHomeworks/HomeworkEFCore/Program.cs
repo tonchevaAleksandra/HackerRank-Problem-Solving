@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HomeworkEFCore.Models;
 using HomeworkEFCore.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeworkEFCore
 {
@@ -15,9 +17,11 @@ namespace HomeworkEFCore
             var dbContext = new OrdersSummaryDbContext();
             var ordersRepository = new Repository<Order>(dbContext);
             Console.WriteLine("Press C to seed the database!");
+            
             if (Console.ReadKey().Key == ConsoleKey.C)
             {
                 await SeedDatabase(ordersRepository);
+                Console.WriteLine();
             }
 
             Console.WriteLine("Press N to see the next 2 orders, P to see previous two orders or A to see all orders!");
@@ -35,6 +39,7 @@ namespace HomeworkEFCore
                 {
                     index -= 2;
                     Console.WriteLine(ShowPreviousTwoOrders(ordersRepository, index));
+                   
                 }
                 else
                 {
@@ -42,34 +47,42 @@ namespace HomeworkEFCore
                 }
 
                 key = Console.ReadKey().Key;
+                Console.WriteLine();
             }
         }
 
         public static string ShowPreviousTwoOrders(IRepository<Order> ordersRepository, int skippedNumber)
         {
             StringBuilder sb = new StringBuilder();
-            var orders = ordersRepository.AllAsNoTracking()
+            var orders = ordersRepository.All()
+                .Include(x => x.Customer)
                 .ToList()
                 .Skip(skippedNumber)
                 .Take(2);
-            foreach (var order in orders)
-            {
-                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
-            }
+            FillOrders(orders, sb);
 
             return sb.ToString().Trim();
+        }
+
+        private static void FillOrders(IEnumerable<Order> orders, StringBuilder sb)
+        {
+            foreach (var order in orders)
+            {
+                sb.AppendLine(order.ToString());
+            }
         }
 
         public static string ShowNextTwoOrders(IRepository<Order> ordersRepository, int skippedNumber)
         {
             StringBuilder sb = new StringBuilder();
-            var orders = ordersRepository.AllAsNoTracking()
+            var orders = ordersRepository.All()
+                .Include(x => x.Customer)
                 .ToList()
                 .Skip(skippedNumber)
                 .Take(2);
             foreach (var order in orders)
             {
-                sb.AppendLine();
+                sb.AppendLine(order.ToString());
             }
 
             return sb.ToString().Trim();
@@ -78,11 +91,12 @@ namespace HomeworkEFCore
         public static string ShowAllOrders(IRepository<Order> ordersRepository)
         {
             StringBuilder sb = new StringBuilder();
-            var orders = ordersRepository.AllAsNoTracking()
+            var orders = ordersRepository.All()
+                .Include(x=>x.Customer)
                 .ToList();
             foreach (var order in orders)
             {
-                sb.AppendLine($"{order.Name} - Created date: {order.CreatedDate} - Customer: {order.Customer.Name}");
+                sb.AppendLine(order.ToString());
             }
 
             return sb.ToString().Trim();
