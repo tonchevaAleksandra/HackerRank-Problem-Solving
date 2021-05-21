@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.JsonPatch;
 
 namespace Endava.Internship2020.WebApiExamples.Services
 {
-    public class TicketsService
+    public class TicketsService : ITicketsService
     {
         private readonly ITicketsRepository repository;
 

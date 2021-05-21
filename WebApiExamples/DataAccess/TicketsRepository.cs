@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Endava.Internship2020.WebApiExamples.DataAccess.Entities;
 using Endava.Internship2020.WebApiExamples.Services;
 using Endava.Internship2020.WebApiExamples.Services.Models;
 
@@ -16,7 +17,7 @@ namespace Endava.Internship2020.WebApiExamples.DataAccess
 
         public Ticket Create(Ticket ticket)
         {
-            var ticketEntity = Mapper.Map(ticket);
+            var ticketEntity = Mapper.Map( ticket);
 
             dataContext.Tickets.Add(ticketEntity);
             dataContext.SaveChanges();
